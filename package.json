@@ -1,0 +1,15 @@
+{
+  "name": "gimyoungphil.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "serve": "python -m SimpleHTTPServer 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GimYoungPhil/gimyoungphil.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://github.com/GimYoungPhil/gimyoungphil.github.io#readme"
+}
