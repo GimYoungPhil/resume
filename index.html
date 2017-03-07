@@ -6,6 +6,45 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   </head>
   <body>
-    <h1>hi hello</h1>
+    <div id="app">
+      <jumbotron></jumbotron>
+      {{ message }}
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mt-4" v-for="project in projects">
+            <card v-bind:project="project"></card>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/x-template" id="jumbotron-template">
+      <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-3">Fluid jumbotron</h1>
+          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/x-template" id="card-template">
+      <div class="card" style="">
+        <img class="card-img-top img-fluid" :src="project.img" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">{{ project.name }}</h4>
+          <p class="card-text">{{ project.description }}</p>
+          <template v-for="technic in project.technics">
+            <span class="badge badge-pill badge-default">{{ technic }}</span>
+          </template>
+        </div>
+        <div class="card-block">
+          <a href="#" class="card-link">Card link</a>
+          <a href="#" class="card-link">Another link</a>
+        </div>
+      </div>
+    </script>
+
+    <script src="https://unpkg.com/vue"></script>
+    <script src="./src/main.js"></script>
   </body>
 </html>
