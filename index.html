@@ -4,42 +4,110 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
     <div id="app">
-      <jumbotron></jumbotron>
-      {{ message }}
-      <div class="container">
+      <jumbotron v-bind:info="info"></jumbotron>
+
+      <div class="container my-5">
+        <h1>About me</h1>
         <div class="row">
-          <div class="col-md-4 mt-4" v-for="project in projects">
-            <card v-bind:project="project"></card>
+          <div class="col-md-4 mt-4">
+            <profile :profile="profile"></profile>
           </div>
         </div>
+      </div>
+
+      <div class="container my-5">
+        <h1>Career</h1>
+        <career v-for="data in career" v-bind:career="data"></career>
+      </div>
+
+      <div class="container my-5">
+        <h1>Projects</h1>
+        <project v-for="project in projects" v-bind:project="project"></project>
       </div>
     </div>
 
     <script type="text/x-template" id="jumbotron-template">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
-          <h1 class="display-3">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+          <h1 class="display-3">{{ info.title }}</h1>
+          <p class="lead">{{ info.subTitle }}</p>
         </div>
       </div>
     </script>
 
-    <script type="text/x-template" id="card-template">
-      <div class="card" style="">
-        <img class="card-img-top img-fluid" :src="project.img" alt="Card image cap">
+    <script type="text/x-template" id="profile-template">
+      <div class="card">
+        <div class="card-img-top" :style="'background-image: url(' + profile.img + ');'" alt="Card image cap"></div>
         <div class="card-block">
-          <h4 class="card-title">{{ project.name }}</h4>
-          <p class="card-text">{{ project.description }}</p>
-          <template v-for="technic in project.technics">
-            <span class="badge badge-pill badge-default">{{ technic }}</span>
-          </template>
+          <h4 class="card-title">{{ profile.name }}</h4>
+          <p class="card-text">{{ profile.description }}</p>
         </div>
-        <div class="card-block">
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
+      </div>
+    </script>
+
+    <script type="text/x-template" id="career-template">
+      <div class="career">
+        <div class="row py-4">
+          <div class="col-md-3">
+            <samp>{{ priod }}</samp>
+          </div>
+          <div class="col-md-7">
+            <div class="d-flex justify-content-start">
+              <div>
+                <h4>
+                  {{ career.name }} <small class="text-muted">{{ career.position }}</small>
+                </h4>
+                <p>{{ career.role }}</p>
+              </div>
+              <div class="ml-auto p-2">
+                <h6 class="text-muted">{{ career.type }}</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <a :href="career.link" target="_blank" class="card-link">Link</a>
+          </div>
+        </div>
+      </div>
+    </script>
+
+    <script type="text/x-template" id="project-template">
+      <div class="project">
+        <div class="row py-4">
+          <div class="col-md-3">
+            <samp>{{ priod }}</samp>
+          </div>
+          <div class="col-md-7">
+            <div class="d-flex justify-content-start">
+              <div>
+                <h4>
+                  {{ project.name }} <small class="text-muted">{{ project.description }}</small>
+                </h4>
+                <ul class="list-inline">
+                  <li class="list-inline-item" v-for="technic in project.technics">
+                    {{ technic }}
+                  </li>
+                </ul>
+              </div>
+              <div class="ml-auto p-2">
+                <h6 class="text-muted">{{ project.type }}</h6>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-2">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                <a :href="project.link" target="_blank" class="card-link">Link</a>
+              </li>
+              <li class="list-inline-item">
+                <a :href="project.repository.url" target="_blank" class="card-link">{{ project.repository.type }}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </script>
