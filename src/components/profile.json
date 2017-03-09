@@ -1,0 +1,195 @@
+{
+  "info": {
+    "title": "Gim YoungPhil",
+    "subTitle": "..."
+  },
+  "profile": {
+    "name": "Gim YoungPhil",
+    "description": "Web Developer",
+    "img": "src/assets/profile.jpg",
+    "git": "",
+    "mail": ""
+  },
+  "skills": [
+    {
+
+    }
+  ],
+  "career": [
+    {
+      "id": "c4",
+      "name": "에이코너리테일(주)",
+      "type": "Permanent Worker",
+      "position": "과장",
+      "role": "Web Front-End Development",
+      "startDate": "2014/12",
+      "endDate": "2016/10"
+    },
+    {
+      "id": "c3",
+      "name": "링크잇 주식회사",
+      "type": "Contract Worker",
+      "position": "연구원",
+      "role": "Web Front-End Development",
+      "link": "http://linkit.kr/",
+      "startDate": "2014/10",
+      "endDate": "2014/06"
+    },
+    {
+      "id": "c2",
+      "name": "(주)소프트웨어인라이프",
+      "type": "Permanent Worker",
+      "position": "선임",
+      "role": "Web Front-End Development",
+      "link": "http://www.softwareinlife.com/",
+      "startDate": "2011/10",
+      "endDate": "2014/05"
+    },
+    {
+      "id": "c1",
+      "name": "(주)익스이노",
+      "type": "Permanent Worker",
+      "position": "주임",
+      "role": "Web Application Development",
+      "link": "http://www.exinno.net/",
+      "startDate": "2010/08",
+      "endDate": "2011/02"
+    }
+  ],
+  "projects": [
+    {
+      "name": "스쿠스쿠 단어장",
+      "description": "일본어 학습",
+      "type": "Personal",
+      "technics": ["Vue.js", "Vuex", "Bulma"],
+      "link": "http://sukusuku.surge.sh/",
+      "repository": {
+        "type": "GitHub",
+        "url": "https://github.com/sukusuku2017/word"
+      },
+      "img": "src/images/sukusuku.png",
+      "startDate": "2016/12",
+      "endDate": "개발중"
+    },
+    {
+      "name": "한국건설기술연구소 기술 데이터 시각화",
+      "description": "",
+      "type": "링크잇 주식회사",
+      "cKey": "c3",
+      "technics": ["React.js", "D3.js", "Node.js", "Express"],
+      "link": "",
+      "startDate": "2016/11",
+      "endDate": "2016/11"
+    },
+    {
+      "name": "KTube",
+      "description": "유투브 아이돌 관련 영상 모음",
+      "type": "Personal",
+      "technics": ["React", "Flux", "Bootstrap"],
+      "link": "https://ktube.bookstour.com/",
+      "repository": {
+        "type": "Bitbucket"
+      },
+      "startDate": "2016/07",
+      "endDate": "2016/08"
+    },
+    {
+      "name": "나를 찾아줘",
+      "description": "유기동물 관련 정보",
+      "type": "Personal",
+      "technics": ["Polymer", "Firebase", "Node.js"],
+      "link": "https://gonegirl.firebaseapp.com/",
+      "repository": {
+        "type": "GitHub",
+        "url": "https://github.com/sukusuku2017/word"
+      },
+      "startDate": "2016/09",
+      "endDate": "2016/09"
+    },
+    {
+      "name": "쿱펀드",
+      "description": "주택대출 P2P 서비스",
+      "type": "에이코너리테일(주)",
+      "technics": ["React", "Flux", "Bootstrap"],
+      "link": "http://www.coopfund.co.kr/",
+      "repository": {
+        "type": "Bitbucket"
+      },
+      "img": "./src/images/coopfund.png",
+      "startDate": "2015/09",
+      "endDate": "2016/10"
+    },
+    {
+      "name": "북스투어",
+      "description": "중고도서 거래 서비스",
+      "type": "에이코너리테일(주)",
+      "technics": ["Backbone.js", "Marionette.js", "Bootstrap"],
+      "link": "https://bookstour.com/",
+      "repository": {
+        "type": "Bitbucket"
+      },
+      "img": "./src/images/bookstour.png",
+      "startDate": "2014/11",
+      "endDate": "2015/08"
+    },
+    {
+      "name": "산림청 산림공간정보서비스",
+      "description": "데이터 시각화",
+      "type": "링크잇 주식회사",
+      "cKey": "c3",
+      "technics": ["Angular.js", "HighChart"],
+      "link": "",
+      "startDate": "2014/06",
+      "endDate": "2014/10"
+    },
+    {
+      "name": "Cloud Services Brokerage",
+      "description": "클라우드 중계 서비스",
+      "type": "(주)소프트웨어인라이프",
+      "cKey": "c2",
+      "technics": ["Backbone.js", "Bootstrap"],
+      "link": "",
+      "startDate": "2013/09",
+      "endDate": "2014/05"
+    },
+    {
+      "name": "SiLApps",
+      "description": "문서결재 서비스",
+      "type": "(주)소프트웨어인라이프",
+      "cKey": "c2",
+      "technics": ["Backbone.js", "Bootstrap"],
+      "link": "",
+      "startDate": "2013/02",
+      "endDate": "2013/08"
+    },
+    {
+      "name": "북스투어",
+      "description": "Hybrid App",
+      "type": "(주)소프트웨어인라이프",
+      "cKey": "c2",
+      "technics": ["SenchaTouch", "PhoneGap"],
+      "link": "",
+      "startDate": "2012/01",
+      "endDate": "2012/12"
+    },
+    {
+      "name": "써클히어로즈",
+      "description": "iOS Game",
+      "type": "(주)소프트웨어인라이프",
+      "cKey": "c2",
+      "technics": ["Objective-C", "Cocos2D"],
+      "link": "",
+      "startDate": "2011/10",
+      "endDate": "2011/12"
+    },
+    {
+      "name": "CJ 통합문서관리 시스템",
+      "description": "기업문서관리",
+      "type": "(주)익스이노",
+      "cKey": "c1",
+      "technics": ["Flex", "Air", "Java"],
+      "startDate": "2010/08",
+      "endDate": "2011/02"
+    }
+  ]
+}
