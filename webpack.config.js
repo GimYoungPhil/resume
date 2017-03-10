@@ -25,8 +25,8 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: "babel-loader",
-        exclude: /node_modules/
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       }
     ]
   },
@@ -41,7 +41,7 @@ module.exports = {
 }
 
 if (process.env.NODE_ENV === 'production') {
-  module.exports.devtool = '#source-map'
+  module.exports.devtool = '#source-map';
 
   module.exports.plugins = (module.exports.plugins || []).concat([
     new webpack.DefinePlugin({

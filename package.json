@@ -1,17 +1,18 @@
 {
   "name": "gimyoungphil.github.io",
   "version": "1.0.0",
+  "author": "GimYoungPhil",
+  "private": true,
   "description": "",
   "scripts": {
     "serve": "python -m SimpleHTTPServer 8000",
     "dev": "NODE_ENV=development webpack-dev-server --hot",
-    "build": "NODE_ENV=production webpack --progress --hide-modules"
+    "build": "NODE_ENV=production webpack --progress"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/GimYoungPhil/gimyoungphil.github.io.git"
   },
-  "author": "",
   "license": "ISC",
   "homepage": "https://github.com/GimYoungPhil/gimyoungphil.github.io#readme",
   "devDependencies": {
@@ -26,6 +27,7 @@
   },
   "dependencies": {
     "bootstrap": "4.0.0-alpha.6",
+    "underscore": "^1.8.3",
     "vue": "^2.2.2"
   }
 }

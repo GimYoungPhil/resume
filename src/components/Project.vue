@@ -22,11 +22,7 @@
         </div>
       </div>
       <div class="col-md-1 offset-md-1">
-        <ul class="list-inline">
-          <li class="list-inline-item" v-if="project.link">
-            <a :href="project.link" target="_blank" class="card-link">Link</a>
-          </li>
-        </ul>
+        <a v-if="project.link" :href="project.link" target="_blank">Link</a>
       </div>
     </div>
   </div>

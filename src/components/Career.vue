@@ -16,7 +16,7 @@
         </div>
       </div>
       <div class="col-md-1 offset-md-1">
-        <a :href="career.link" target="_blank" v-if="career.link">Link</a>
+        <a v-if="career.link" :href="career.link" target="_blank">Link</a>
       </div>
     </div>
   </div>

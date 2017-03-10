@@ -1,10 +1,10 @@
 {
   "info": {
-    "title": "Gim YoungPhil",
-    "subTitle": "..."
+    "title": "Web Developer",
+    "subTitle": "개발자입니다만."
   },
   "profile": {
-    "name": "Gim YoungPhil",
+    "name": "Gim ...",
     "description": "Web Developer",
     "img": "src/assets/profile.jpg",
     "git": "",
@@ -83,7 +83,7 @@
     },
     {
       "name": "KTube",
-      "description": "유투브 아이돌 관련 영상 모음",
+      "description": "유투브 아이돌 관련 영상",
       "type": "Personal",
       "technics": ["React", "Flux", "Bootstrap"],
       "link": "https://ktube.bookstour.com/",
