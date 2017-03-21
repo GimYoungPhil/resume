@@ -61,7 +61,7 @@
       "name": "스쿠스쿠 단어장",
       "description": "일본어 학습",
       "type": "Personal",
-      "technics": ["Vue.js", "Vuex", "Bulma"],
+      "technics": ["Vue.js", "Vuex", "Firebase:Storage", "Bulma"],
       "link": "http://sukusuku.surge.sh/",
       "repository": {
         "type": "GitHub",

@@ -3,7 +3,15 @@
 ## for waht?
 [개인 홈페이지](https://gimyoungphil.github.io/)
 
-## run
+## 실행:개발
 ```sh
-$ npm run serve
+$ yarn dev
 ```
+
+## 빌드
+```sh
+$ yarn build
+```
+
+## 배포
+git commit 이용
